@@ -57,7 +57,7 @@ def test_equipment_with_rentals_cannot_be_deleted(equipment_repo, make_equipment
     eq = make_equipment()
     make_rental(eq)
 
-    with pytest.raises(psycopg.errors.RestrictViolation): #with pytest.raises(psycopg.errors.ForeignKeyViolation):
+    with pytest.raises((psycopg.errors.ForeignKeyViolation, psycopg.errors.RestrictViolation)):
         equipment_repo.delete(eq.id)
 
     assert equipment_repo.find_by_id(eq.id) == eq
