@@ -71,7 +71,7 @@ def test_get_non_existent_rental():
     assert "code" in error_data
     assert "message" in error_data
 
-їdef test_return_rental_action(valid_payload):
+def test_return_rental_action(valid_payload):
     rental_id = requests.post(RENTALS_URL, json=valid_payload).json()["id"]
 
     action_resp = requests.post(f"{RENTALS_URL}/{rental_id}/return", json={"overdue_days": 1})
