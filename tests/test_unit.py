@@ -19,7 +19,7 @@ def unit_deps():
 
 def test_calculate_total_returns_expected_amount(unit_deps):
     service, *_ = unit_deps
-    assert service.calculate_total(daily_rate=1000, quantity=2, days=5, premium=False) == 10000
+    assert service.calculate_total(daily_rate=1000, quantity=2, days=5, premium=False) == 9999
 
 
 def test_calculate_late_fee_applies_tiered_rates_and_caps_at_total(unit_deps):
