@@ -1,0 +1,50 @@
+{
+  "GET /rentals/{id}" : {
+    "transaction" : "GET /rentals/{id}",
+    "sampleCount" : 134,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 4.44776119402985,
+    "medianResTime" : 4.0,
+    "minResTime" : 3.0,
+    "maxResTime" : 11.0,
+    "pct1ResTime" : 9.0,
+    "pct2ResTime" : 9.25,
+    "pct3ResTime" : 11.0,
+    "throughput" : 4.544221378187737,
+    "receivedKBytesPerSec" : 1.5398875178038525,
+    "sentKBytesPerSec" : 0.6967214417729246
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 268,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 5.947761194029855,
+    "medianResTime" : 5.0,
+    "minResTime" : 3.0,
+    "maxResTime" : 96.0,
+    "pct1ResTime" : 9.0,
+    "pct2ResTime" : 13.0,
+    "pct3ResTime" : 18.170000000000016,
+    "throughput" : 9.012644605864946,
+    "receivedKBytesPerSec" : 3.0760930563962874,
+    "sentKBytesPerSec" : 1.9759167129069142
+  },
+  "POST /rentals" : {
+    "transaction" : "POST /rentals",
+    "sampleCount" : 134,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 7.4477611940298525,
+    "medianResTime" : 6.0,
+    "minResTime" : 5.0,
+    "maxResTime" : 96.0,
+    "pct1ResTime" : 13.0,
+    "pct2ResTime" : 14.0,
+    "pct3ResTime" : 70.45000000000041,
+    "throughput" : 4.522443469456632,
+    "receivedKBytesPerSec" : 1.5545899426257173,
+    "sentKBytesPerSec" : 1.2896030205872426
+  }
+}
